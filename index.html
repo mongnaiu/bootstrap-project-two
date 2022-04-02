@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cospace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- navbar start-->
+    <nav class="navbar navbar-expand-lg bg-transparent bg-black p-0  sticky-top" style="z-index: 100; ">
+     <div class="container ">
+         <a href="#" class="navbar-brand fw-bold text-white"><span class="text-success me-2"><i class="fa-solid fa-building"></i></span>CoSpace</a>
+         
+         <!-- <button type="button" class="navbar-toggle" data-bs-target="tog" data-bs-toggle="navbar-collapse"></button> -->
+
+         <div class="collapse navbar-collapse justify-content-between" id="tog">
+             <ul class="navbar-nav mx-auto gap-4 py-3 ">
+                 <li class="nav-item">
+                     <a href="#" class="nav-link text-white">Home</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Location</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                    <a href="#" class="nav-link  dropdown-toggle text-white"   aria-expanded="false" id="company-dropdown">Company</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Company Type</a></li>
+                        <li><a href="#" class="dropdown-item">Location</a></li>
+                        <li><a href="#" class="dropdown-item">About Us</a></li>
+                        <li><a href="#" class="dropdown-item">Collection</a></li>
+                    </ul>
+
+                 </li>
+                 <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">Contact</a>
+                </li>
+             </ul>
+             <div class="log-btn d-flex justify-content-end">
+                 <a href="#" class="btn btn-success rounded-0 px-4">Log In</a>
+             </div>
+         </div>
+     </div>
+    </nav>
+    <!-- navbar-end -->
+    <!-- hero section start-->
+    
+    <section class="container-fluid hero " style="padding: 160px 0px; background-image: url(img/hero.jpg); background-position: center center;background-size: cover; margin-top: -100px;">
+        <div class="container hero-container">
+            <div class="row g-5">
+                <!-- hero left -->
+            <div class="hero-left col-12 col-md-6 col-lg-6 align-items-center">
+                <p class="text-success fw-bold">WE ARE COSPACE</p>
+                <h1 class="fw-bold display-5 text-white">The <span class="text-success">largest</span> leading premium coworking and office space</h1>
+                <p class="lead fs-6 text-white">We provide the best workspace for your company. Over 150 locations around the world. Find your best place to work in CoSpace.</p>
+                <a href="#" class="btn btn-success rounded-0 fw-bold mt-2 px-4">Explore</a>
+                <div class="d-flex gap-5 count mt-5">
+                  <div class="rooms ">
+                      <h1 class="fw-bold text-white">150+</h1>
+                      <p class="fw-bold text-white-50">Rooms Available</p>
+                  </div>
+                  <div class="customer">
+                      <h1 class="fw-bold text-white">48k</h1>
+                      <p class="fw-bold text-white-50">Happy Customers</p>
+                  </div>
+                  <div class="experience">
+                      <h1 class="fw-bold text-white">15</h1>
+                      <p class="fw-bold text-white-50">Year Experiences</p>
+                  </div>
+                </div>
+              </div>
+              <!--hero left end  -->
+              <!-- hero right start -->
+              <div class="hero-right col-12 col-md-6 col-lg-6 ps-5">
+                  <div class="hero-form bg-body p-5">
+                    <h4>Let's Get In Touch</h4>
+                    <form action="" class="hero-form">
+                        <select name="room-type" id="room" class="form-select mb-4">
+                            <option selected value="0">Pick an option</option>
+                            <option value="private-office">Private Office</option>
+                            <option value="crowd-office">Crowdfunding Office</option>
+                            <option value="virtual-office">Virtual Office</option>
+                            <option value="meeting-room">Meeting Room</option>
+                        </select>
+                        <div class="row name-input mb-4">
+                            <div class="col-6">
+                                <input type="text" placeholder="First Name" class="w-100 form-control">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" placeholder="Last Name" class="w-100 form-control" >
+                            </div>
+                        </div>
+                        <div class="row info-input mb-4">
+                          <div class="col-6">
+                              <input type="email" placeholder="Work Email" class="w-100 form-control">
+                          </div>
+                          <div class="col-6">
+                              <input type="tel" placeholder="Phone Number" class="w-100 form-control" >
+                          </div>
+                      </div>
+                      <input type="text" class="form-control mb-4" placeholder="Company">
+                      <div class="row num-input mb-4">
+                          <div class="col-6">
+                              <input type="number" placeholder="Number Of People" class="w-100 form-control">
+                          </div>
+                          <div class="col-6">
+                              <input type="number" placeholder="Move In Date" class="w-100 form-control" >
+                          </div>
+                      </div>
+                      <input type="text" placeholder="Additional Info" class="form-control w-100 mb-4">
+                      <button type="submit" class="btn btn-success w-100 rounded-0">Enquire Now</button>
+                    </form>
+                  </div>
+              </div>
+              <!-- hero right end -->
+            </div>
+        </div>
+    </section>
+
+    <!-- hero section end -->
+    <!-- space section strt -->
+    <section class="container space py-5">
+        <div class="space-head my-5 position-relative">
+            <h1 class="text-center fw-bold fs-2">Find Your Space</h1>
+            <div class="bar-line "></div>
+        </div>
+        <div class="space-cards row gx-4">
+            <div class="col-12 col-sm-6 col-lg-4 space-card">
+              <div class="main-card shadow">
+                <div class="space-img">
+                    <img class="img-fluid" src="img/campaign-creators-gMsnXqILjp4-unsplash.jpg" alt="campaign">
+                </div>
+                <div class="space-card-content p-4">
+                    <h4 class="fw-bold fs-5">Private Office <span class="badge bg-success rounded-0 ms-4">$30 / Day</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur illum vel doloribus voluptates!</p>
+                    <ul class="space-card-list list-unstyled">
+                        <li class="mb-3 "><span class="bg-black bg-opacity-75 px-2 py-1 me-2"><i class="fa-solid fa-check" style="color: white; font-size: 12px;"></i></span>Hight Speed Connection</li>
+                        <li class="mb-3 "><span class="bg-black bg-opacity-75 px-2 py-1 me-2"><i class="fa-solid fa-check" style="color: white; font-size: 12px;"></i></span>Hight Speed Connection</li>
+                        <li class="mb-3 "><span class="bg-black bg-opacity-75 px-2 py-1 me-2"><i class="fa-solid fa-check" style="color: white; font-size: 12px;"></i></span>Hight Speed Connection</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 space-card">
+                <div class="main-card shadow">
+                  <div class="space-img ">
+                      <img class="img-fluid" src="img/redd-5U_28ojjgms-unsplash.jpg" alt="campaign">
+                  </div>
+                  <div class="space-card-content p-4">
+                      <h4 class="fw-bold fs-5">Coworking Space<span class="badge bg-success rounded-0 ms-4">$30 / Day</span></h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur illum vel doloribus voluptates!</p>
+                      <ul class="space-card-list list-unstyled">
+                          <li class="mb-3 "><span class="bg-black bg-opacity-75 px-2 py-1 me-2"><i class="fa-solid fa-check" style="color: white; font-size: 12px;"></i></span>Hight Speed Connection</li>
+                          <li class="mb-3 "><span class="bg-black bg-opacity-75 px-2 py-1 me-2"><i class="fa-solid fa-check" style="color: white; font-size: 12px;"></i></span>Hight Speed Connection</li>
+                          <li class="mb-3 "><span class="bg-black bg-opacity-75 px-2 py-1 me-2"><i class="fa-solid fa-check" style="color: white; font-size: 12px;"></i></span>Hight Speed Connection</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 space-card">
+                <div class="main-card shadow">
+                  <div class="space-img">
+                      <img class="img-fluid" src="img/slidebean-TpGIpUF67po-unsplash.jpg" alt="campaign">
+                  </div>
+                  <div class="space-card-content p-4">
+                      <h4 class="fw-bold fs-5">Virtual Office <span class="badge bg-success rounded-0 ms-4">$30 / Day</span></h4>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur illum vel doloribus voluptates!</p>
+                      <ul class="space-card-list list-unstyled">
+                          <li class="mb-3 "><span class="bg-black bg-opacity-75 px-2 py-1 me-2"><i class="fa-solid fa-check" style="color: white; font-size: 12px;"></i></span>Hight Speed Connection</li>
+                          <li class="mb-3 "><span class="bg-black bg-opacity-75 px-2 py-1 me-2"><i class="fa-solid fa-check" style="color: white; font-size: 12px;"></i></span>Hight Speed Connection</li>
+                          <li class="mb-3 "><span class="bg-black bg-opacity-75 px-2 py-1 me-2"><i class="fa-solid fa-check" style="color: white; font-size: 12px;"></i></span>Hight Speed Connection</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!-- space section end -->
+    <!-- why choose us strt -->
+    <section class="container py-5">
+    <div class="choose-us my-5 position-relative">
+        <div class="choose-head">
+            <h1 class="text-center fw-bold fs-2">Why Choose Us?</h1>
+            <div class="bar-line "></div>
+        </div>
+        <!-- choose us content strt -->
+        <div class="choose-content row gx-5">
+            <div class="choose-img-box col-12 col-lg-6 ">
+               <div class="img-box"><img src="img/alesia-kazantceva-XLm6-fPwK5Q-unsplash.jpg" alt=""></div>
+               <div class="img-box vertical"><img src="img/olena-sergienko-dIMJWLx1YbE-unsplash.jpg" alt=""></div>
+               <div class="img-box"><img src="img/ant-rozetsky-HXOllTSwrpM-unsplash.jpg" alt=""></div>
+               
+            </div>
+            <div class="choose-feature row col-12 col-lg-6 align-items-center">
+               <div class="choose-one col-12 col-lg-6">
+                   <h2 class="fw-bold fs-5">Modern & Comfortable</h2>
+                   <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
+               </div>
+               <div class="choose-two col-12 col-lg-6">
+                <h2 class="fw-bold fs-5">24/7 Secure Access</h2>
+                <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
+            </div>
+            <div class="choose-three col-12 col-lg-6">
+                <h2 class="fw-bold fs-5">Free Drinks & Snacks</h2>
+                <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
+            </div>
+            <div class="choose-four col-12 col-lg-6">
+                <h2 class="fw-bold fs-5">Printing & Scanning</h2>
+                <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
+            </div>
+            </div>
+        </div>
+        <!-- choose use content end -->
+    </div>    
+    </section>
+    <!-- why choose use end -->
+
+    <!-- price table strt -->
+  <section class="container">
+    <div class="price-head py-5 position-relative">
+        <h1 class="text-center fw-bold fs-2">Select Your Plan</h1>
+    </div>
+    <div class="d-flex justify-content-center gap-2">
+        <div class="daily"><p class="text-muted">Daily</p></div>
+    <div class="form-check form-switch">
+        <input class="form-check-input"  type="checkbox"  role="switch" id="dailyMonth">
+    </div>
+    <div class="daily"><p class="text-muted">Monthly</p></div>
+    </div>
+    
+    <!-- pricing table content -->
+    <div class="pricing-tables row">
+        <div class="pricing-table col-12 col-lg-4">
+         <div class="card border-1">
+             <div class="card-body py-4 ps-4">
+                 <h3 class="card-title fw-bold fs-4 ">Coworking Space</h3>
+                 <p class="card-subtitle">Best for small group</p>
+             </div>
+             <div class="card-header bg-success text-white py-3 ps-4">
+            <h1 class="cowork"><span class="fs-6">$</span >19<span class="fs-6">p/day</span></h1>
+             </div>
+             <ul class="list-group border-0 list-group-flush ps-2 py-3">
+                 <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>24/7 Access</li>
+                 <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>High speed Wi-Fi</li>
+                 <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>Secure keycard access</li>
+                 <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>Dedicated phone line</li>
+                 <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>Meeting room usage</li>
+                 <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>Daily cleaning service</li>
+             </ul>
+             <div class="card-footer py-4 border-top bg-body ps-4">
+                 <a href="#" class="btn btn-success rounded-0 px-4 fw-bold fs-6 ">Sign Up Now </a>
+            </div>
+         </div>
+        </div>
+        <div class="pricing-table col-12 col-lg-4">
+            <div class="card border-1">
+                <div class="card-body py-4 ps-4">
+                    <h3 class="card-title fw-bold fs-4 ">Virtual Office</h3>
+                    <p class="card-subtitle">Best for organization</p>
+                </div>
+                <div class="card-header bg-success text-white py-3 ps-4">
+               <h1 class="virtual"><span class="fs-6">$</span  >150<span class="fs-6">p/day</span></h1>
+                </div>
+                <ul class="list-group border-0 list-group-flush ps-2 py-3">
+                    <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>24/7 Access</li>
+                    <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>High speed Wi-Fi</li>
+                    <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>Secure keycard access</li>
+                    <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>Dedicated phone line</li>
+                    <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>Meeting room usage</li>
+                    <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>Daily cleaning service</li>
+                </ul>
+                <div class="card-footer py-4 border-top bg-body ps-4">
+                    <a href="#" class="btn btn-success rounded-0 px-4 fw-bold fs-6 ">Sign Up Now </a>
+               </div>
+            </div>
+           </div>
+           <div class="pricing-table col-12 col-lg-4">
+            <div class="card border-1">
+                <div class="card-body py-4 ps-4">
+                    <h3 class="card-title fw-bold fs-4 ">Private Office</h3>
+                    <p class="card-subtitle">Best for personal</p>
+                </div>
+                <div class="card-header bg-success text-white py-3 ps-4">
+               <h1 class="private"><span class="fs-6">$</span >200<span class="fs-6">p/day</span></h1>
+                </div>
+                <ul class="list-group border-0 list-group-flush ps-2 py-3">
+                    <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>24/7 Access</li>
+                    <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>High speed Wi-Fi</li>
+                    <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>Secure keycard access</li>
+                    <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>Dedicated phone line</li>
+                    <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>Meeting room usage</li>
+                    <li class="list-group-item border-0 text-muted"><span class="me-3 text-success"><i class="fa-solid fa-check"></i></span>Daily cleaning service</li>
+                </ul>
+                <div class="card-footer py-4 border-top bg-body ps-4">
+                    <a href="#" class="btn btn-success rounded-0 px-4 fw-bold fs-6 ">Sign Up Now </a>
+               </div>
+            </div>
+           </div>
+    </div>
+    <!-- pricing table content -->
+  </section>
+    <!-- price table end -->
+
+  <!-- space-type -->
+<section class="container py-5">
+    <div class="choose-us my-5 position-relative">
+        <div class="choose-head">
+            <h1 class="text-center fw-bold fs-2">Space Type</h1>
+            <div class="bar-line "></div>
+        </div>
+        </div>
+
+        <!-- overlay card -->
+        <div class="row g-4">
+            <div class="col-lg-4 col-12">
+                <div class="card text-white rounded-0 overlay-card">
+                    <img src="img/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" alt=""style="height: 530px;">
+                    <div class="card-img-overlay py-4 px-4">
+                        <h3 class="card-title fw-bold fs-5"><span class="text-success">01</span>Podcast</h3>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error odio illum consequatur obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card text-white rounded-0 overlay-card">
+                    <img src="img/andrew-neel-ute2XAFQU2I-unsplash.jpg" alt="" style="height: 530px;">
+                    <div class="card-img-overlay py-4 px-4">
+                        <h3 class="card-title fw-bold fs-5"><span class="text-success">02</span>Live Streaming</h3>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error odio illum consequatur obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="card text-white rounded-0 overlay-card">
+                    <img src="img/james-mcdonald-3d4sSUChunA-unsplash.jpg" alt="" style="height: 530px;">
+                    <div class="card-img-overlay py-4 px-4">
+                        <h3 class="card-title fw-bold fs-5"><span class="text-success">03</span>Photo & Video Shoot</h3>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error odio illum consequatur obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- overlay card-end -->
+</section>
+  <!-- space type end -->
+
+  <!-- footer start -->
+
+<footer class="container-fluid pt-5 pb-1 mb-2 mt-5 border-top">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-12 col-lg-3 col-md-6">
+                <h3 class="fw-bold fs-5">Plans</h3>
+                <ul class="link-list list-unstyled">
+                    <li> <a class="text-decoration-none text-secondary" href="">Private Office</a> </li>
+                    <li> <a class="text-decoration-none text-secondary" href="">Coworking Office</a> </li>
+                    <li> <a class="text-decoration-none text-secondary" href="">Virtual Office</a> </li>
+                    <li> <a class="text-decoration-none text-secondary" href="">Meeting Room</a> </li>
+                    <li> <a class="text-decoration-none text-secondary" href="">Dedicated Desk</a> </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6">
+                <h3 class="fw-bold fs-5">Company</h3>
+                <ul class="link-list list-unstyled">
+                    <li> <a class="text-decoration-none text-secondary" href="">About Us</a> </li>
+                    <li> <a class="text-decoration-none text-secondary" href="">News</a> </li>
+                    <li> <a class="text-decoration-none text-secondary" href="">Jobs</a> </li>
+                    <li> <a class="text-decoration-none text-secondary" href="">Franchise</a> </li>
+                    <li> <a class="text-decoration-none text-secondary" href="">Contact</a> </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6">
+                <h3 class="fw-bold fs-5">Events</h3>
+                <ul class="link-list list-unstyled">
+                    <li> <a class="text-decoration-none text-secondary" href="">Jump Start Your Business</a> </li>
+                    <li> <a class="text-decoration-none text-secondary" href="">Coworking Offic</a> </li>
+                    <li> <a class="text-decoration-none text-secondary" href="">Web Development Meet Up</a> </li>
+                    <li> <a class="text-decoration-none text-secondary" href="">Envato Summer Meet Up</a> </li>
+                    <li> <a class="text-decoration-none text-secondary" href=""> Dribble Meet Up Sydney</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6">
+                <h3 class="fw-bold fs-5">Newsletter</h3>
+                <p class="text-muted">Signup for our newsletter to get the latest news in your inbox.</p>
+                <form action="" class="newsletter d-flex">
+                    <input type="email" class="form-control rounded-0" name="email" id="my-email" placeholder="enter your email">
+                    <button type="submit" class="btn btn-success d-block rounded-0"><span><i class="fa-solid fa-arrow-right-long"></i></span></button>
+                </form>
+                <small class="text-muted">Your email is safe with us. We don't spam.</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright div -->
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-2">
+                <h4 class="fw-bold fs-4"><span class="text-success me-2"><i class="fa-solid fa-building"></i></span>CoSpace</h4>
+            </div>
+            <div class="col-12 col-lg-7">
+                <a href="#" class="text-decoration-none text-muted">© Copyright 2021 - CoSpace by Designesia</a>
+            </div>
+            <div class="col-12 col-lg-3 d-flex justify-content-start justify-content-lg-end gap-2">
+            <a href="#" class="btn btn-success"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+            <a href="#" class="btn btn-success"><span><i class="fa-brands fa-instagram"></i></span></a>
+            <a href="#" class="btn btn-success"><span><i class="fa-brands fa-twitter"></i></span></a>
+            <a href="#" class="btn btn-success"><span><i class="fa-brands fa-linkedin-in"></i></span></a>
+            <a href="#" class="btn btn-success"><span><i class="fa-brands fa-pinterest-p"></i></span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
